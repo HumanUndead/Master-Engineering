@@ -1,5 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+import { Alexandria } from "next/font/google"
+
+const alexand = Alexandria({
+  weight: ['200','300','400','500','600','700','800','900'],
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: "Mastering Engineering",
@@ -8,9 +17,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode}>) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className={alexand.className}>
+      <body className="w-screen min-h-screen font-extralight">
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

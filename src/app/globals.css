@@ -1,25 +1,9 @@
 @import "tailwindcss";
 
-:root {
-  --font-alexandria: 'Alexandria', sans-serif;
+*{
+  border-box:box-sizing;
 }
-
-body {
-  font-family: "AlexandriaRegular", sans-serif;
-}
-
 
 .overhead {
   @apply w-full h-full bg-black opacity-75
-}
-
-@layer base{
-
-  @font-face {
-    font-family: "AlexandriaRegular";
-    src: url("/assets/fonts/Alexandria-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-  }
 }
