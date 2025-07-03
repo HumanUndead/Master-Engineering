@@ -3,13 +3,14 @@ import Button from './Button'
 import { MdOutlineKeyboardArrowLeft } from 'react-icons/md'
 import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa'
 import { FaLinkedinIn } from 'react-icons/fa6'
+import { IoIosArrowDown } from 'react-icons/io'
 
 const bgGold ='bg-gradient-to-r from-[#CCA24E] via-[#C18A30] to-[#FFD67D] ';
 const iconColor = 'text-[#CCA24E] text-xl rotate-90'
 
 const Header = () => {
     return (
-        <div className='relative h-dvh w-screen overflow-hidden bg-cover bg-center'
+        <div className='relative h-dvh w-screen overflow-hidden bg-cover bg-center '
             style={{ backgroundImage: 'url("/assets/imgs/landing-page.png")' }}>
             
             <div className='overhead z-20'></div>
@@ -44,13 +45,17 @@ const Header = () => {
 
                     <span className={`inline-block w-[2px] h-8 ${bgGold}`} />
 
-                    <div className='flex justify-center items-center gap-4 '>
+                    <div className=' flex justify-center items-center gap-4 '>
                         <FaInstagram className={`${iconColor}`} />
                         <FaLinkedinIn className={`${iconColor}`} />
                         <FaYoutube className={`${iconColor}`} />
                         <FaFacebookF className= {`${iconColor}`}/>
                     </div>
                 </div>
+            </div>
+
+            <div className='absolute bottom-5 left-[50%] bg-gray-500 md:w-[68px] md:h-[53px] w-[48px] h-[33px] flex items-center justify-center'>
+                <IoIosArrowDown className='text-2xl text-white' />
             </div>
         </div>
     )

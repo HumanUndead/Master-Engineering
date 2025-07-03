@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 import { Alexandria } from "next/font/google"
+import Navbar from "@/components/Navbar";
+import Test from "@/components/Test";
 
 const alexand = Alexandria({
   weight: ['200','300','400','500','600','700','800','900'],
@@ -18,9 +20,20 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode}>) {
   return (
     <html lang="en" className={alexand.className}>
-      <body className="w-screen min-h-screen font-extralight">
-        <Header />
-        {children}
+      <body className="w-screen min-h-screen font-extralight overflow-x-hidden ">
+          <Navbar />
+            <main>
+              <Header />
+              {children}
+              <Test />
+              <Test />
+              <Test />
+              <Test />
+              <Test />
+              <Test />
+              <Test />
+              <Test />
+            </main>
         <Footer />
       </body>
     </html>
