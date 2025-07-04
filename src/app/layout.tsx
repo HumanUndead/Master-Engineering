@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 import { Alexandria } from "next/font/google"
 import Navbar from "@/components/Navbar";
-import Test from "@/components/Test";
+
 
 const alexand = Alexandria({
   weight: ['200','300','400','500','600','700','800','900'],
@@ -25,14 +25,6 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
             <main>
               <Header />
               {children}
-              <Test />
-              <Test />
-              <Test />
-              <Test />
-              <Test />
-              <Test />
-              <Test />
-              <Test />
             </main>
         <Footer />
       </body>
