@@ -7,3 +7,11 @@
 .overhead {
   @apply w-full h-full bg-black opacity-75
 }
+
+.our-work {
+  @apply font-light text-[20px] text-[#15253E]
+}
+
+.spanBorder {
+  @apply inline-block w-[22px] h-[2px] bg-[#15253E]
+}

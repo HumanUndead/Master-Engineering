@@ -17,7 +17,7 @@ const Navbar = () => {
     const navItems = ["الرئيسية", "خدماتنا", "مشاريعنا", "خدمة الدراسة الأولية المجانية", "تواصل معنا"]
 
     return (
-        <header className="w-full z-990 fixed top-0">
+        <header className="w-full z-990 absolute top-0">
             <nav className="relative">
                 {/* Desktop Navigation */}
                 <div className="hidden lg:flex justify-between items-center w-full h-full">
