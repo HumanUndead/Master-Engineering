@@ -9,7 +9,7 @@ const iconColor = 'text-[#CCA24E] text-xl rotate-90'
 
 const Header = () => {
     return (
-        <div className='relative h-dvh w-screen overflow-hidden bg-cover bg-center '
+        <div className='relative h-dvh w-screen overflow-hidden bg-cover bg-center cursor-pointer'
             style={{ backgroundImage: 'url("/assets/imgs/landing-page.png")' }}>
             
             <div className='overhead z-20'></div>

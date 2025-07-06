@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Achievement from "@/components/Achievement";
+import Features from "@/components/Features";
 import Work from "@/components/Work";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <About />
       <Work />
       <Achievement />
+      <Features />
     </main>
   );
 }
