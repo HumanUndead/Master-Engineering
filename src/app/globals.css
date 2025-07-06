@@ -21,14 +21,22 @@
   line-height: 2;
 }
 
-.overlayEffect {
+.overlayEffect,
+.overlayAchievement {
   width: 100%;
   height: 100%;
   
   position: absolute;
   top: 0;
   left: 0;
+}
+.overlayEffect{ 
   background-color: #0000006c;
+}
+
+.overlayAchievement{
+  background-color: #15253ed8;
+
 }
 
 .goldBg {
@@ -46,9 +54,11 @@
   height: 100%;
   background-color: #15253EE5;
 }
+
 .addOverlay:hover .addIndex{
   z-index: 5555;
 }
+
 .addOverlay:hover .arrowLeft{
   display: block;
 }
