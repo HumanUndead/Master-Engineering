@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 *{
-  border-box:box-sizing;
+  box-sizing: border-box;
 }
 
 .overhead {
@@ -14,4 +14,41 @@
 
 .spanBorder {
   @apply inline-block w-[22px] h-[2px] bg-[#15253E]
+}
+
+.customBorder {
+  border-bottom: 6px solid #15253E;
+  line-height: 2;
+}
+
+.overlayEffect {
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0000006c;
+}
+
+.goldBg {
+  @apply bg-gradient-to-r from-[#CCA24E] via-[#C18A30] to-[#FFD67D]
+}
+
+.addOverlay:hover::after {
+  transition: all 0.3s ease-in-out;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: #15253EE5;
+}
+.addOverlay:hover .addIndex{
+  z-index: 5555;
+}
+.addOverlay:hover .arrowLeft{
+  display: block;
 }
