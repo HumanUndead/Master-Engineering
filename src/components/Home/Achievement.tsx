@@ -19,7 +19,7 @@ const Achievement = () => {
     ]
 
     return (
-        <div className='w-full relative min-h-[538px] py-8 overflow-x-hidden'>
+        <div className='w-full relative h-[538px] py-8 overflow-x-hidden'>
             <div className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: "url('/assets/imgs/achievements.png')" }}>
                 

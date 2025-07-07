@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 import { Alexandria } from "next/font/google"
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Home/Navbar";
+import Header from "@/components/Home/Header";
+import Footer from "@/components/Home/Footer";
 
 const alexand = Alexandria({
   weight: ['200','300','400','500','600','700','800','900'],

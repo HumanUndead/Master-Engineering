@@ -1,11 +1,11 @@
-import About from "@/components/About";
-import Achievement from "@/components/Achievement";
-import Features from "@/components/Features";
-import Work from "@/components/Work";
+import About from "@/components/Home/About";
+import Achievement from "@/components/Home/Achievement";
+import Features from "@/components/Home/Features";
+import Work from "@/components/Home/Work";
 
 export default function Home() {
   return (
-    <main className="w-screen min-h-screen bg-[#F3F3F3]">
+    <main className="min-w-screen min-h-screen bg-[#F3F3F3]">
       <About />
       <Work />
       <Achievement />

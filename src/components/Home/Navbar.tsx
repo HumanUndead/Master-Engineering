@@ -2,8 +2,9 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import Button from "./Button"
+
 import { IoMdSearch, IoMdMenu, IoMdClose } from "react-icons/io"
+import Button from "./Button";
 
 const navTxtColor = 'bg-gradient-to-r from-[#CCA24E] via-[#C18A30] to-[#FFD67D] bg-clip-text text-transparent';
 
