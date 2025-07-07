@@ -44,7 +44,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className='absolute md:top-[250px] md:left-[8px] left-[-120px] top-[400px] max-sm:top-[550px] max-sm:left-[-90px]  md:w-[237px] md:h-[286px]'>
+                    <div className='absolute md:top-[250px] md:left-[8px] left-[-120px] top-[400px] max-sm:top-[600px] max-sm:left-[-90px]  md:w-[237px] md:h-[286px]'>
                         <p className='w-[80%] max-sm:w-[50%] max-sm:text-[50px] font-black text-[70px] md:text-[110px] opacity-7'>
                             من نحن
                         </p>

@@ -44,25 +44,25 @@ const News = () => {
                     <h4 className='font-light text-[32px] md:text-[64px] text-[#15253E] opinionBottomBorder relative'> اخر الاحداث والمستجدات</h4>
                 </div>
 
-                <div className='grid md:grid-cols-2 max-sm:grid-cols-1 lg:grid-cols-3 justify-center gap-3'>
+                <div className='grid md:grid-cols-2 max-sm:grid-cols-1 lg:grid-cols-3 gap-3'>
                 {
                     newsInfo.map((news,index) => (
-                        <div key={index}>
+                        <div key={index} className='max-w-[383px]'>
                             <img  className='w-[386px] h-[400px] object-cover rounded-lg' src={news.src} alt={news.newsTitle} />
 
-                            <div className="w-full flex flex-col gap-y-2 text-center  max-sm:items-center sm:items-center md:text-right">
+                            <div className="w-full flex flex-col gap-y-2 max-sm:text-center max-sm:items-center sm:items-center md:text-right">
                                 
-                                <h4 className={`${playfairDisplay.className} #15253E font-normal text-[32px]`}>{news.newsTitle}</h4>
+                                <h4 className={`${playfairDisplay.className} #15253E md:w-full font-normal text-[32px]`}>{news.newsTitle}</h4>
                                 
-                                <div className="flex flex-col md:flex-row justify-end items-center gap-4 #15253E text-[16px]">
+                                <div className="md:w-full flex flex-col md:flex-row justify-end items-center gap-4 text-[#15253E] text-[16px]">
                                     <span>{news.newsDate}</span>
                                     <span className='hidden md:block'> / </span>
                                     <span className='goldBg bg-clip-text text-transparent font-normal'> {news.newsOwner} </span>
                                 </div>
 
-                                <p className=' font-light text-[16px] text-[#595959]'>{news.newsText}</p>
+                                <p className=' font-light w-[382px] text-[16px] text-[#595959]'>{news.newsText}</p>
 
-                                <p className='flex justify-end items-center gap-4'>
+                                <p className='md:w-full flex justify-end items-center gap-4'>
                                     <GoArrowLeft className='w-6 h-6 text-yellow-400' />
                                     <span className='font-medium text-[16px]'>قراءة المزيد</span>
                                 </p>

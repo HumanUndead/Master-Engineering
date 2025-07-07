@@ -81,3 +81,15 @@ body {
   height: 2px;
   background: linear-gradient(to left, #CCA24E, #C18A30, #FFD67D);
 }
+
+@media (min-width: 768px) {
+  .footerLinks::after {
+    content: '';
+    position: absolute;
+    left: -16px;
+    bottom: 10px;
+    width: 8px;
+    height: 2px;
+    background: linear-gradient(to left, #CCA24E, #C18A30, #FFD67D);
+  }
+}
