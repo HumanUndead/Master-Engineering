@@ -71,3 +71,13 @@ body {
 .b-bottom{
   border-bottom: 6px solid #15253E;
 }
+
+.opinionBottomBorder::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 65%;
+  height: 2px;
+  background: linear-gradient(to left, #CCA24E, #C18A30, #FFD67D);
+}

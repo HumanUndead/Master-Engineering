@@ -1,6 +1,7 @@
 import About from "@/components/Home/About";
 import Achievement from "@/components/Home/Achievement";
 import Features from "@/components/Home/Features";
+import Testimonials from "@/components/Home/Testimonials";
 import Work from "@/components/Home/Work";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Work />
       <Achievement />
       <Features />
+      <Testimonials />
     </main>
   );
 }

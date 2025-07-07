@@ -67,7 +67,10 @@ const Work = () => {
                                 <div key={index} className="relative group max-w-[588px] max-h-[360px] overflow-hidden">
                                         <div className='addOverlay'>
                                             <div className='overlayEffect'></div>
-                                            <img src={info.src} alt={info.headTitle} className="w-full h-full object-cover" />
+                                            <img 
+                                                src={info.src}
+                                                alt={info.headTitle}
+                                                className="w-full h-full object-cover" />
 
                                             <div className='addIndex absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-50%] 
                                                 flex flex-col items-center justify-center gap-2 text-center w-full px-4'>

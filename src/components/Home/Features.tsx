@@ -21,24 +21,25 @@ const Features = () => {
     ]
 
     return (
-        <div className='w-full relative h-screen py-8 overflow-x-hidden'>
+        <div className='w-full relative py-8 overflow-x-hidden'>
             <div className="container mx-auto">
-                <div className='flex gap-2 text-[40px]'>
+
+                <div className='flex gap-2 text-[35px] md:text-[40px] max-sm:items-center max-sm:justify-center'>
                     <p className='b-bottom font-light'>المميزة</p>
                     <p className='font-thin'>من اعمالنا</p>
                 </div>
 
-                <div className='mt-5'>
+                <div>
                     {
                         mainInfo.map((info,index) => (
-                            <div key={index} className={`w-full flex flex-col lg:flex-row ${ info.index === 2 ? 'lg:flex-row-reverse' : ''} justify-between items-center gap-10 my-20`}>
-                                    <img className="w-[647px] h-[426px] object-cover rounded-lg" src={info.src} alt={info.title} />
+                            <div key={index} className={`w-full flex flex-col lg:flex-row ${ info.index === 2 ? 'lg:flex-row-reverse' : ''} justify-between items-center gap-5 md:gap-10 my-20`}>
+                                    <img className="md:w-[647px] h-[426px] object-cover rounded-lg" src={info.src} alt={info.title} />
 
-                                    <div className="max-w-[500px] text-end flex flex-col gap-4">
+                                    <div className="max-w-[500px] w-full text-center md:text-end flex flex-col gap-4">
                                         <p className="font-bold text-[32px] md:text-[40px]">{info.title}</p>
                                         <p className="font-light text-[14px] md:text-[16px] leading-[1.8]"> {info.subTitle}</p>
 
-                                        <div className="flex justify-end">
+                                        <div className="flex justify-center md:justify-end">
                                             <Button
                                                 text={info.buttonContent}
                                                 textColor="text-[#15253E]"
