@@ -1,6 +1,5 @@
 import React from 'react'
 import { Playfair_Display } from "next/font/google"
-import { RiDoubleQuotesL } from 'react-icons/ri'
 
 
 const playfairDisplay = Playfair_Display({
@@ -12,7 +11,7 @@ const playfairDisplay = Playfair_Display({
 
 const Testimonials = () => {
     return (
-        <div className='w-full h-screen md:p-8 p-2 overflow-x-hidden bg-white'>
+        <div className='w-full h-full md:p-8 p-2 overflow-x-hidden bg-white'>
             <div className="container mx-auto">
                 
                 <div className="my-5 flex flex-col justify-center items-center gap-1">

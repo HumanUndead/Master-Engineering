@@ -1,6 +1,7 @@
 import About from "@/components/Home/About";
 import Achievement from "@/components/Home/Achievement";
 import Features from "@/components/Home/Features";
+import News from "@/components/Home/News";
 import Testimonials from "@/components/Home/Testimonials";
 import Work from "@/components/Home/Work";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Achievement />
       <Features />
       <Testimonials />
+      <News />
     </main>
   );
 }
