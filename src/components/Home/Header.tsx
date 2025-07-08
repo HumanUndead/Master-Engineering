@@ -10,12 +10,12 @@ const iconColor = 'text-[#CCA24E] text-xl rotate-90'
 
 const Header = () => {
     return (
-        <div className='relative h-dvh w-full overflow-hidden bg-cover bg-center cursor-pointer'
+        <div className='relative h-dvh w-full bg-cover bg-center cursor-pointer'
             style={{ backgroundImage: 'url("/assets/imgs/landing-page.png")' }}>
             
             <div className='overhead z-200'></div>
             
-            <div className="container z-800">
+            <div className="container z-800 mx-auto">
                 <div className='font-extralight	 z-50 absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col text-center'>
                     <h3 className='font-extralight text-white  max-sm:text-[30px] md:text-[70px] md:leading-[131px]'>Master Engineering</h3>
                     
@@ -40,7 +40,7 @@ const Header = () => {
                     />
                 </div>
 
-                <div className='absolute max-sm:bottom-25 bottom-20 -right-20 md:-right-22 bg-[#15253E] p-2 md:p-4 -rotate-90'>
+                <div className='absolute bottom-22 -right-22 md:-right-19 bg-[#15253E] p-2 md:p-4 -rotate-90'>
                     <div dir='rtl' className='flex items-center justify-between gap-4'>
                         <span className={`goldBg bg-clip-text text-transparent text-[16px]`}> نبذة عنا </span>
 
