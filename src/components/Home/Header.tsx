@@ -30,7 +30,7 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className='absolute bottom-2 left-2 md:left-8 mt-2'>
+                <div className='absolute  max-sm:bottom-9 bottom-2 left-2 md:left-8 mt-2'>
                     <img 
                         src="/assets/videos/how-to-use-vid.png"
                         width={250}
@@ -40,13 +40,13 @@ const Header = () => {
                     />
                 </div>
 
-                <div className='absolute bottom-20 -right-20 md:-right-22 bg-[#15253E] p-2 md:p-4 -rotate-90'>
+                <div className='absolute max-sm:bottom-25 bottom-20 -right-20 md:-right-22 bg-[#15253E] p-2 md:p-4 -rotate-90'>
                     <div dir='rtl' className='flex items-center justify-between gap-4'>
                         <span className={`goldBg bg-clip-text text-transparent text-[16px]`}> نبذة عنا </span>
 
                         <span className={`inline-block w-[2px] h-8 goldBg`} />
 
-                        <div className=' flex justify-center items-center gap-4 '>
+                        <div className='flex justify-center items-center gap-4 '>
                             <FaInstagram className={`${iconColor}`} />
                             <FaLinkedinIn className={`${iconColor}`} />
                             <FaYoutube className={`${iconColor}`} />
@@ -55,7 +55,7 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className='absolute bottom-5 left-[50%] bg-gray-500 md:w-[68px] md:h-[53px] w-[48px] h-[33px] flex items-center justify-center'>
+                <div className='absolute max-sm:bottom-3 bottom-5 left-[50%] bg-gray-500 md:w-[68px] md:h-[53px] w-[48px] h-[33px] flex items-center justify-center'>
                     <IoIosArrowDown className='text-2xl text-white' />
                 </div>
             </div>
