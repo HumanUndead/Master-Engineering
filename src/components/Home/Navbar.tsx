@@ -45,7 +45,7 @@ const Navbar = () => {
                                 />
                             </li>
 
-                            {navItems.map((item, index) => (
+                            {navItems.map((item:any, index:number) => (
                                 <li key={index} className={`transition-colors duration-300 cursor-pointer whitespace-nowrap text-sm xl:text-base hover:text-[#d4b578] `}>
                                     {item}
                                 </li>
@@ -79,7 +79,7 @@ const Navbar = () => {
                     {isMenuOpen && (
                         <div className="absolute z-88 top-full left-0 w-full bg-[#15253E] shadow-lg">
                             <ul dir="rtl" className="flex flex-col text-white">
-                                {navItems.map((item, index) => (
+                                {navItems.map((item:any, index:number) => (
                                     <li key={index} className="border-b border-gray-600 last:border-b-0">
                                         <a href="#" className="block px-6 py-4 hover:bg-[#1a2b42] transition-colors duration-300"
                                         onClick={() => setIsMenuOpen(false)} > {item} </a>

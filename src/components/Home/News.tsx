@@ -46,7 +46,7 @@ const News = () => {
 
                 <div className='grid md:grid-cols-2 max-sm:grid-cols-1 lg:grid-cols-3 gap-3'>
                 {
-                    newsInfo.map((news,index) => (
+                    newsInfo.map((news:any,index:number) => (
                         <div key={index} className='max-w-[383px]'>
                             <img  className='w-[386px] h-[400px] object-cover rounded-lg' src={news.src} alt={news.newsTitle} />
 

@@ -44,7 +44,7 @@ const Achievement = () => {
 
                         <div dir='ltr' className="statisticsNumber w-full mt-8 flex items-center justify-end gap-5 md:gap-10">
                             {
-                                statistics.map((info,index) => (
+                                statistics.map((info:any,index:number) => (
                                     <div key={index} className='flex flex-col items-end md:justify-center md:items-center md:gap-2'>
                                         <span className='goldBg bg-clip-text text-transparent font-medium text-[40px] md:text-[102px]'>{info.number}</span>
                                         <span className='text-[28px] text-white font-thin opacity-[60%] max-sm:text-[16px] '>{info.info}</span>

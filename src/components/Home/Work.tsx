@@ -63,7 +63,7 @@ const Work = () => {
 
                     <div dir='ltr' className='grid max-sm:grid-cols-1 md:grid-cols-2 gap-6 cursor-pointer'>
                         {
-                            InfoSection.map((info,index) => (
+                            InfoSection.map((info:any,index:number) => (
                                 <div key={index} className="relative group max-w-[588px] max-h-[360px] overflow-hidden">
                                         <div className='addOverlay'>
                                             <div className='overlayEffect'></div>

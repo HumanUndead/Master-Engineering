@@ -17,7 +17,7 @@ const Footer = () => {
                         <div className="flex flex-col gap-y-2 md:self-start">
                             <h3 className='goldBg bg-clip-text text-transparent font-normal text-[32px]'>Special Links</h3>
                             <div className='text-white flex flex-col max-sm:items-center ml-5 gap-y-2'>
-                                {links.map((info,index) => (
+                                {links.map((info:any,index:number) => (
                                     <a key={index} className={`footerLinks relative no-underline block text-[16px] font-normal`}>{info}</a>
                                 ))}
                             </div>
@@ -27,7 +27,7 @@ const Footer = () => {
                         <div className="flex flex-col gap-y-2">
                             <h3 className='goldBg bg-clip-text text-transparent  font-normal text-[32px]'>Contact</h3>
                             <div className='text-white flex flex-col gap-y-2'>
-                                {contact.map((info,index) => (
+                                {contact.map((info:any,index:number) => (
                                     <p
                                         key={index}
                                         className={`${index === 0 ? 'md:w-[235px]':''} font-normal text-[16px]`}>

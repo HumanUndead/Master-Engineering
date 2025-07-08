@@ -31,7 +31,7 @@ const Features = () => {
 
                 <div>
                     {
-                        mainInfo.map((info,index) => (
+                        mainInfo.map((info:any,index:number) => (
                             <div key={index} className={`w-full flex flex-col lg:flex-row ${ info.index === 2 ? 'lg:flex-row-reverse' : ''} justify-between items-center gap-5 md:gap-10 my-20`}>
                                     <img className="md:w-[647px] h-[426px] object-cover rounded-lg" src={info.src} alt={info.title} />
 
