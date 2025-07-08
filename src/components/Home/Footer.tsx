@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaArrowUpLong } from 'react-icons/fa6'
 
 const Footer = () => {
     const links = ['About Us','Contact Us','FAQ','Projects']
@@ -43,6 +44,13 @@ const Footer = () => {
                                 <p className='text-[16px] font-light'>Subscribe to our newsletter & get all the latest news.</p>
                                 <input className='bg-white text-black border-none px-1 py-1 outline-none' type="text" />
                             </div>
+                        </div>
+                    </div>
+
+                    <div className='w-full flex justify-center items-center'>
+                        <div className='arrowTop flex justify-center items-center flex-col gap-2'>
+                            <FaArrowUpLong  className='text-[#CCA24E] text-2xl' />
+                            <span className='text-white font-normal text-[16px]'>Back To top</span>
                         </div>
                     </div>
                 </div>

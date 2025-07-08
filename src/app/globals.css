@@ -93,3 +93,7 @@ body {
     background: linear-gradient(to left, #CCA24E, #C18A30, #FFD67D);
   }
 }
+
+.arrowTop {
+  transform: translateY(50%);
+}
