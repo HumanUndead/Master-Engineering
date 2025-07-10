@@ -40,7 +40,7 @@ const Header = () => {
                     />
                 </div>
 
-                <div className='absolute bottom-22 -right-22 md:-right-19 bg-[#15253E] p-2 md:p-4 -rotate-90'>
+                <div className='absolute bottom-22 -right-22 md:-right-22 bg-[#15253E] p-2 md:p-4 -rotate-90'>
                     <div dir='rtl' className='flex items-center justify-between gap-4'>
                         <span className={`goldBg bg-clip-text text-transparent text-[16px]`}> نبذة عنا </span>
 
