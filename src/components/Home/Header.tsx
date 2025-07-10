@@ -10,12 +10,12 @@ const iconColor = 'text-[#CCA24E] text-xl rotate-90'
 
 const Header = () => {
     return (
-        <div className='relative h-dvh w-full bg-cover bg-center cursor-pointer'
+        <div className=' h-dvh w-full bg-cover bg-center cursor-pointer'
             style={{ backgroundImage: 'url("/assets/imgs/landing-page.png")' }}>
             
             <div className='overhead z-200'></div>
             
-            <div className="container z-800 mx-auto">
+            <div className="container z-800 mx-auto ">
                 <div className='font-extralight	 z-50 absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col text-center'>
                     <h3 className='font-extralight text-white  max-sm:text-[30px] md:text-[70px] md:leading-[131px]'>Master Engineering</h3>
                     
