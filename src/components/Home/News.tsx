@@ -37,9 +37,9 @@ const News = () => {
     ]
 
     return (
-        <div className='w-full p-5 md:p-20 overflow-x-hidden bg-[#F3F3F3]'>
+        <div className='w-full p-5 overflow-x-hidden bg-[#F3F3F3]'>
             <div className="container mx-auto">
-                <div className="my-5 flex flex-col justify-center items-center gap-1">
+                <div className="my-5 mb-16 flex flex-col justify-center items-center gap-1">
                     <p className='text-[16px] goldBg bg-clip-text text-transparent font-normal'> الأخبار ومقالات </p>
                     <h4 className='font-light text-[32px] md:text-[64px] text-[#15253E] opinionBottomBorder relative'> اخر الاحداث والمستجدات</h4>
                 </div>

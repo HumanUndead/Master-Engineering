@@ -11,10 +11,11 @@ const playfairDisplay = Playfair_Display({
 
 const Testimonials = () => {
     return (
-        <div className='w-full h-full md:p-8 p-2 overflow-x-hidden bg-white'>
+        <div className='relative w-full h-full md:p-8 p-2 overflow-hidden bg-white'>
+            
             <div className="container mx-auto">
                 
-                <div className="my-5 flex flex-col justify-center items-center gap-1">
+                <div className="my-5 flex flex-col justify-center items-center">
                     <p className='text-[16px] goldBg bg-clip-text text-transparent font-normal'>الأراء</p>
                     <h4 className='font-light text-[32px] md:text-[64px] text-[#15253E] opinionBottomBorder relative'>ما يقوله عملاؤنا</h4>
                 </div>
@@ -48,11 +49,19 @@ const Testimonials = () => {
 
                     <div className='w-full flex items-center justify-center max-sm:mt-5 md:justify-end'>
                         <div className='flex justify-center items-center gap-4'>
-                            <p className='w-4 h-[1px] bg-gray-400'> </p>
-                            <p>01 02 03 04</p>
+                            <p className='w-4 h-[1px] bg-gray-400'></p>
+                            <div className='flex gap-7'>
+                                {[1, 2, 3, 4].map((slide, index) => (
+                                    <span key={index}>{slide}</span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className='absolute right-0 top-20'>
+                <img src="/assets/imgs/Vector.png" alt="Vector image" />
             </div>
         </div>
     )

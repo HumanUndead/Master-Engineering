@@ -48,10 +48,10 @@ const Footer = () => {
                     </div>
 
                     <div className='w-full flex justify-center items-center'>
-                        <div className='arrowTop flex justify-center items-center flex-col gap-2'>
+                        <button className='arrowTop flex justify-center items-center flex-col gap-2' >
                             <FaArrowUpLong  className='text-[#CCA24E] text-2xl' />
-                            <span className='text-white font-normal text-[16px]'>Back To top</span>
-                        </div>
+                            <a href='#' className='text-white font-normal text-[16px]'>Back To top</a>
+                        </button>
                     </div>
                 </div>
             </div>

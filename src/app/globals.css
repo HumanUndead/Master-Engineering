@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .overhead {
   @apply w-full h-full bg-black opacity-75
 }
@@ -41,7 +45,6 @@ body {
 
 .overlayAchievement{
   background-color: #15253ed8;
-
 }
 
 .goldBg {
