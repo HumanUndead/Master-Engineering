@@ -10,13 +10,13 @@ const iconColor = 'text-[#CCA24E] text-xl rotate-90'
 
 const Header = () => {
     return (
-        <div className=' h-dvh w-full bg-cover bg-center cursor-pointer'
+        <div className='h-dvh w-full bg-cover bg-center cursor-pointer'
             style={{ backgroundImage: 'url("/assets/imgs/landing-page.png")' }}>
             
             <div className='overhead z-200'></div>
             
-            <div className="container z-800 mx-auto ">
-                <div className='font-extralight	 z-50 absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col text-center'>
+            <div className="container z-800 mx-auto">
+                <div className='font-extralight absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col text-center'>
                     <h3 className='font-extralight text-white  max-sm:text-[30px] md:text-[70px] md:leading-[131px]'>Master Engineering</h3>
                     
                     <span className={`max-sm:text-[20px] md:text-[50px] goldBg bg-clip-text text-transparent mb-2`}> صمم معنا منزل أحلامك
@@ -30,7 +30,7 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className='absolute  max-sm:bottom-9 bottom-2 left-2 md:left-8 mt-2'>
+                <div className='absolute  max-sm:bottom-9 bottom-9 left-2 md:left-14 mt-2'>
                     <img 
                         src="/assets/videos/how-to-use-vid.png"
                         width={250}
@@ -39,23 +39,24 @@ const Header = () => {
                         className={`max-sm:w-[200px] max-sm:h-[150px]`}
                     />
                 </div>
+                
+                <div className='absolute right-0 bottom-0 w-[57px] h-[360px] bg-[#15253E] flex flex-col justify-evenly items-center gap-4'>
+                    <span className="goldBg bg-clip-text text-transparent text-[16px] -rotate-90 whitespace-nowrap">
+                        نبذة عنا
+                    </span>
 
-                <div className='absolute bottom-22 -right-22 md:-right-22 bg-[#15253E] p-2 md:p-4 -rotate-90'>
-                    <div dir='rtl' className='flex items-center justify-between gap-4'>
-                        <span className={`goldBg bg-clip-text text-transparent text-[16px]`}> نبذة عنا </span>
+                    <span className="inline-block w-[1px] h-8 goldBg rotate-90" />
 
-                        <span className={`inline-block w-[2px] h-8 goldBg`} />
-
-                        <div className='flex justify-center items-center gap-4 '>
-                            <FaInstagram className={`${iconColor}`} />
-                            <FaLinkedinIn className={`${iconColor}`} />
-                            <FaYoutube className={`${iconColor}`} />
-                            <FaFacebookF className= {`${iconColor}`}/>
-                        </div>
+                    <div className='flex flex-col items-center gap-4'>
+                        <FaInstagram className="text-[#CCA24E] text-xl" />
+                        <FaLinkedinIn className="text-[#CCA24E] text-xl" />
+                        <FaYoutube className="text-[#CCA24E] text-xl" />
+                        <FaFacebookF className="text-[#CCA24E] text-xl" />
                     </div>
                 </div>
 
-                <div className='absolute max-sm:bottom-3 bottom-5 left-[50%] bg-gray-500 md:w-[68px] md:h-[53px] w-[48px] h-[33px] flex items-center justify-center'>
+
+                <div className='absolute max-sm:bottom-3 bottom-5 left-[48%] bgDownArrow md:w-[68px] md:h-[53px] w-[48px] h-[33px] flex items-center justify-center'>
                     <IoIosArrowDown className='text-2xl text-white' />
                 </div>
             </div>

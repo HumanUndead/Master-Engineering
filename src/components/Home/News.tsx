@@ -52,7 +52,7 @@ const News = () => {
 
                             <div className="w-full flex flex-col gap-y-2 max-sm:text-center max-sm:items-center sm:items-center md:text-right">
                                 
-                                <h4 className={`${playfairDisplay.className} #15253E md:w-full font-normal text-[32px]`}>{news.newsTitle}</h4>
+                                <h4 className={`${playfairDisplay.className} #15253E mt-3 md:w-full font-normal text-[32px]`}>{news.newsTitle}</h4>
                                 
                                 <div className="md:w-full flex flex-col md:flex-row justify-end items-center gap-4 text-[#15253E] text-[16px]">
                                     <span>{news.newsDate}</span>

@@ -24,7 +24,7 @@ const Navbar = () => {
                 <div className="hidden lg:flex justify-between items-center w-full h-full">
 
                     {/* Login Button - Left side */}
-                    <div className="cursor-pointer ml-4 xl:ml-44">
+                    <div className="cursor-pointer ml-[10%] xl:ml-44">
                         <Button
                             text="تسجيل دخول"
                             backgroundColor="bg-gradient-to-r from-[#CCA24E] via-[#C18A30] to-[#FFD67D]"
@@ -47,7 +47,7 @@ const Navbar = () => {
 
                             {navItems.map((item:any, index:number) => (
                                 <li key={index} className={`transition-colors duration-300 cursor-pointer whitespace-nowrap text-sm xl:text-base hover:text-[#d4b578] `}>
-                                    {item}
+                                    <span className={`${index == 0 ? 'bg-gradient-to-r from-[#CCA24E] via-[#C18A30] to-[#FFD67D] bg-clip-text text-transparent' : ""}`}>{item}</span>
                                 </li>
                             ))}
 

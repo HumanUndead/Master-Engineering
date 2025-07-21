@@ -4,7 +4,7 @@ const bgGold ='bg-gradient-to-r from-[#CCA24E] via-[#C18A30] to-[#FFD67D] bg-cli
 
 const About = () => {
     return (
-        <div className='w-full relative min-h-[728px] py-24 container mx-auto'>
+        <div className='w-full relative min-h-[728px] py-11 container mx-auto'>
             <div className='flex items-center justify-end gap-2 overflow-x-hidden'>
                 <div dir='rtl' className='px-6 md:px-0 md:absolute md:top-20 md:right-[380px]'>
                     <h4 className='font-light text-black text-xl sm:text-2xl md:text-3xl flex md:gap-2 max-sm:flex-col'>

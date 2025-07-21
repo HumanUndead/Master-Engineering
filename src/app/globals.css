@@ -97,3 +97,7 @@ body {
 .arrowTop {
   transform: translateY(50%);
 }
+
+.bgDownArrow {
+  background-color: #716e6e93;
+}
