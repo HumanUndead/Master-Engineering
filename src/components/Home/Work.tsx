@@ -43,7 +43,7 @@ const Work = () => {
 
     return (
         <div className='w-full relative min-h-[728px] -mt-16 pb-11 overflow-x-hidden'>
-            <div dir='rtl' className='container mx-auto overflow-x-hidden p-8'>
+            <div id='Projects' dir='rtl' className='container mx-auto overflow-x-hidden p-8'>
                 
                 <div className="content flex flex-col gap-8">
                     <div dir='' className="topic w-[173px] hight-[52px]">

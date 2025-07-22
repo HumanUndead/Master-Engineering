@@ -2,7 +2,26 @@ import React from 'react'
 import { FaArrowUpLong } from 'react-icons/fa6'
 
 const Footer = () => {
-    const links = ['About Us','Contact Us','FAQ','Projects']
+    const linkA = [
+        {
+            id:1,
+            name:"About Us",
+            direction: "About",
+        },{
+            id:2,
+            name:"Contact Us",
+            direction: "Contact",
+        },{
+            id:3,
+            name:"FAQ",
+            direction: "FAQ",
+        },{
+            id:4,
+            name:"Projects",
+            direction: "Projects",
+        }
+    ]
+
     const contact = ['Amman - Mecca Street - Al-Husseini Complex - Fourth Floor - Office 404','info@master-engineers.com','+962 7 9975 2035']
     return (
         <footer className='w-full'>
@@ -17,8 +36,8 @@ const Footer = () => {
                         <div className="flex flex-col gap-y-2 md:self-start">
                             <h3 className='goldBg bg-clip-text text-transparent font-normal text-[32px]'>Special Links</h3>
                             <div className='text-white flex flex-col max-sm:items-center ml-5 gap-y-2'>
-                                {links.map((info:any,index:number) => (
-                                    <a key={index} className={`footerLinks relative no-underline block text-[16px] font-normal`}>{info}</a>
+                                {linkA.map((info:any,index:number) => (
+                                    <a href={`#${info.direction}`} key={index} className={`footerLinks relative no-underline block text-[16px] font-normal`}>{info.name}</a>
                                 ))}
                             </div>
                         </div>
