@@ -104,3 +104,11 @@ html {
 .bgDownArrow {
   background-color: #716e6e93;
 }
+
+/* swiper */
+
+.swiper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
